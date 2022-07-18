@@ -1,0 +1,8 @@
+{
+    "name": "Burger Shop",
+    "short_name": "BurgerShop",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#fce177"
+}
