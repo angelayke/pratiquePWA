@@ -1,0 +1,340 @@
+/* Propriétés générales */
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+body {
+	font-size: 1rem;
+	background-color: rgb(252, 225, 119);
+	font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Lobster', cursive;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.7rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+.btn {
+	margin: 5px 5px;
+	font-size: 0.8rem;
+	background-color: rgb(158, 55, 55);
+	border: solid 1px rgb(252, 225, 119);
+	text-decoration: none;
+	color: rgb(252, 225, 119);
+	padding: 10px 20px;
+}
+
+/* header */
+
+.logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: inline-block;
+	margin: 10px 10px;
+	font-size: 1.5rem;
+
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	padding: 15px 25px;
+}
+
+nav a:hover {
+	color: rgb(22, 171, 240);
+}
+
+#cmd {
+	background-color: rgb(22, 171, 240);
+}
+
+#cmd a:hover {
+	color: rgb(252, 225, 119);
+}
+
+.ptimenuburger {
+	margin-top: 16px;
+}
+
+/* main */
+
+main {
+	padding: 20px 0;
+}
+
+.flex-burger {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.box {
+	text-align: center;
+	width: 25%;
+	margin-bottom: 3%;
+}
+
+.nom {
+	font-size: 1.5rem;
+	margin: 5px;
+}
+
+.prix {
+	font-size: 2.5rem;
+	margin: 3px;
+}
+
+input,
+select,
+textarea {
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+
+input[id="nbPresence"] {
+	width: 50px;
+}
+
+input:focus,
+input:hover {
+	background-color: rgb(228, 228, 228);
+}
+
+span {
+	color: red;
+}
+
+/*Page Ma commande*/
+
+.flex-cmd {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+#panier {
+	width: 68%;
+}
+
+#detail {
+	width: 30%;
+	background-color: rgb(148, 97, 62);
+	padding: 10px 10px;
+	color: rgb(252, 225, 119);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td,
+th {
+	padding: 10px 10px;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	text-align: right;
+}
+
+#detail hr {
+	border-color: rgb(252, 225, 119);
+}
+
+#panier hr {
+	border: black 1px solid;
+}
+
+.titre {
+	font-size: 1.8rem;
+}
+
+
+/* aside */
+#aside1 {
+	background-color: rgb(148, 97, 62);
+	color: black;
+}
+
+.tshirt {
+	display: flex;
+	justify-content: space-between;
+}
+
+#div-tshirt {
+	max-width: 50%;
+}
+
+#aside2 {
+	background-color: rgb(36, 24, 16);
+	color: black;
+	padding: 30px 0;
+}
+
+#h3-ad2 {
+	padding-top: 30px;
+}
+
+.foo1 {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+#tel {
+	padding: 15px 20px;
+	text-decoration: none;
+	background-color: white;
+	color: rgb(36, 24, 16);
+}
+
+/* footer */
+
+footer {
+	background-color: white;
+	color: black;
+	padding: 20px 0px;
+}
+
+/* Positionnement avec grid  */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		"img1 img1 img2"
+		"img1 img1 img3"
+		"img4 img5 img5"
+		"img6 img5 img5";
+}
+
+#img1 {
+	grid-area: img1;
+}
+
+#img2 {
+	grid-area: img2;
+}
+
+#img3 {
+	grid-area: img3;
+}
+
+#img4 {
+	grid-area: img4;
+}
+
+#img5 {
+	grid-area: img5;
+}
+
+#img6 {
+	grid-area: img6;
+}
+
+/* Media queries */
+
+
+
+@media screen and (min-width: 570px) and (max-width: 960px) {
+	nav {
+		display: none !important;
+	}
+
+	.box {
+		width: 33.33%;
+
+	}
+
+	#tshirt {
+		margin-top: 40%;
+	}
+
+	#panier {
+		width: 55%;
+	}
+
+	#detail {
+		width: 40%;
+	}
+
+	.grid-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+		"img1 img2"
+		"img3 img4"
+		"img5 img6";
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.ptimenuburger {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 570px) {
+	nav {
+		display: none !important;
+	}
+
+	.box {
+		width: 50%;
+	}
+
+	#aside1 {
+		display: none;
+	}
+
+	#panier {
+		width: 100%;
+	}
+
+	#detail {
+		width: 100%;
+	}
+
+	.grid-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+		"img1 img2"
+		"img3 img4"
+		"img5 img6";
+	}
+}

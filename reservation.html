@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Réservation</title>
+	<meta name="description" content="Restaurant Burger Shop, offrant des burgers et des beignes délicieuses">
+
+	<!-- meta viewport : importante à inclure pour l'affichage sur les divers appareils -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link media="screen" rel="stylesheet" href="css/normalize.css">
+	<link media="screen" rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="burger.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header class="container">
+		<div class="logo">
+			<a href="index.html"><img src="../tp3-pellizzari-angelique/img/logo-burger-shop_200px.png"
+					alt="Logo Burger Shop"></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Menu</a></li>
+					<li><a href="reservation.html">Réservation</a></li>
+					<li><a href="restaurant.html">Restaurant</a></li>
+					<li id="cmd"><a href="macommande.html">Ma Commande</a></li>
+				</ul>
+			</nav>
+			<img class="ptimenuburger" href="#" src="img/icon-menu-fonce.png" alt="menu burger">
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h1>Réservation</h1>
+			<form action="confirmation.html" method="post" id="frmreservation">
+				<fieldset>
+					<label for="txtPrenom">Prénom <span>*</span></label><br>
+					<input type="text" id="txtPrenom" name="txtPrenom" required>
+					<br>
+					<label for="txtNom">Nom <span>*</span></label><br>
+					<input type="text" id="txtNom" name="txtNom" required>
+					<br>
+					<label for="numTel">Téléphone <span>*</span></label><br>
+					<input type="number" id="numTel" name="numTel" required>
+					<br>
+					<label for="nbPresence">Pour combien de personne ? <span>*</span></label><br>
+					<input type="number" id="nbPresence" name="nbPresence" value="1" required>
+					<br>
+					<label for="dateReservation">À quelle date souhaitez-vous réserver ? <span>*</span></label><br>
+					<input type="date" id="dateReservation" name="dateReservation" required>
+					<br>
+					<label for="inpLieu">Avez-vous une préférence ? <span>*</span></label>
+					<label for="inpSaM">Salle à manger </label><input type="radio" id="rdoLieu" value="SaM" checked>
+					<label for="inpTrs">Terrasse </label> <input type="radio" id="rdoLieu" value="Trs">
+					<br>
+					<label for="heure">Choisissez l'heure de réservation <span>*</span></label><br>
+					<select name="heure" id="heure" required>
+						<option value="1200">12:00</option>
+						<option value="1230">12:30</option>
+						<option value="1300">13:00</option>
+						<option value="1330">13:30</option>
+						<option value="1700">17:00</option>
+						<option value="1730">17:30</option>
+						<option value="1800">18:00</option>
+						<option value="1830">18:30</option>
+						<option value="1900">19:00</option>
+						<option value="1930">19:30</option>
+						<option value="2000">20:00</option>
+						<option value="2030">20:30</option>
+						<option value="2100">21:00</option>
+					</select>
+					<br>
+					<label for="txtMessage">Laissez-nous un commentaire (facultatif) </label>
+					<br>
+					<textarea name="txtMessage" id="txtMessage"></textarea>
+					<br>
+					<label for="email">Courriel (facultatif) </label><br>
+					<input type="email" id="email" name="email" placeholder ="xyz@mail.com">
+					<br>
+					<input type="checkbox" id="ckbinfolettre" name="ckbinfolettre">
+					<label for="ckbinfolettre"><em> Cochez cette case si vous souhaitez vous abonner à notre infolettre (facultatif) </em></label>
+					<br>
+
+					<button class="btn" type="submit">Envoyer</button>
+				</fieldset>
+			</form>
+		</div>
+	</main>
+
+	<aside id="aside2">
+		<div class="container foo1">
+			<p><strong>Burger Shop</strong>: 1660 Boul. de l'Entente, Québec</p>
+			<a id="tel" href="tel:+14181234567"><strong>418-123-4567</strong></a>
+		</div>
+	</aside>
+	<footer>
+		<div class="container">
+			<p>Site réalisé par : <strong>Pellizzari Angélique</strong> | Dans le cadre du
+				programme Développement Web - Cégep de Trois-Rivières</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
