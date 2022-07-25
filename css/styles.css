@@ -273,9 +273,9 @@ footer {
 
 
 @media screen and (min-width: 570px) and (max-width: 960px) {
-	nav {
+	/*nav {
 		display: none !important;
-	}
+	}*/
 
 	.box {
 		width: 33.33%;
@@ -310,9 +310,9 @@ footer {
 }
 
 @media screen and (min-width: 320px) and (max-width: 570px) {
-	nav {
+	/*nav {
 		display: none !important;
-	}
+	}*/
 
 	.box {
 		width: 50%;
