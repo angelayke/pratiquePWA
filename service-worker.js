@@ -51,7 +51,7 @@ self.addEventListener('fetch', (evt) => {
         .catch(() => {
             return caches.open(CACHE_NAME)
                 .then((cache) => {
-                    return cache.match('/Cochenille/PointNClick/offline . h t m l ');
+                    return cache.match('/offline.html');
                 });
         })
     );
